@@ -2,15 +2,16 @@ package br.com.cursojava;
 
 import java.util.Scanner;
 
-//Matheus Felipe Pasold: Avaliação Questão 3;
-public class Exer3 {
+public class Exer6 {
 	
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		System.out.println("Digite uma frase: ");
+		System.out.println("ESCREVA UMA PALAVRA: ");
 		String frase = teclado.nextLine();
 		
-		
+		for (int pos = frase.length() - 1; pos >= 0; pos--) {
+			System.out.print(frase.charAt(pos));
+		}
 		
 		teclado.close();
 	}
